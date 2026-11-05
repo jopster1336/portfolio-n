@@ -3,8 +3,155 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Netternal</title>
+  <title>jopster1336 — портфолио</title>
+  <meta name="description" content="Разработчик игр Roblox и инструментов для AI-агентов.">
+  <style>
+    :root {
+      --bg: #f6f6f3;
+      --fg: #15171c;
+      --muted: #5d6370;
+      --card: #ffffff;
+      --line: #e2e3e7;
+      --accent: #2f6fdb;
+      --tag: #eef2fb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e1014;
+        --fg: #e9ebf0;
+        --muted: #9ba2af;
+        --card: #161920;
+        --line: #252932;
+        --accent: #7aa2ff;
+        --tag: #1c2230;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      font-size: 15px;
+    }
+    nav .name { font-weight: 700; color: var(--fg); }
+    nav .links { display: flex; gap: 20px; }
+    .hero { padding: 56px 0 40px; }
+    h1 {
+      font-size: clamp(32px, 6vw, 50px);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin: 0 0 16px;
+    }
+    .lead { font-size: 19px; color: var(--muted); max-width: 620px; margin: 0; }
+    h2 { font-size: 22px; letter-spacing: -0.01em; margin: 48px 0 16px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .card h3 { font-size: 17px; margin: 0; }
+    .card p { margin: 0; color: var(--muted); font-size: 15px; flex: 1; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+    .tag {
+      background: var(--tag);
+      color: var(--muted);
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+    .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skills .tag { font-size: 14px; padding: 4px 12px; }
+    footer {
+      margin-top: 64px;
+      border-top: 1px solid var(--line);
+      padding: 24px 0 40px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
+  <div class="wrap">
+    <nav>
+      <a class="name" href="#">jopster1336</a>
+      <div class="links">
+        <a href="#projects">Проекты</a>
+        <a href="#contact">Контакты</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>Разработчик игр Roblox</h1>
+      <p class="lead">Делаю игры с разрушаемым воксельным миром, симуляторы и PvP. Строю инструменты, чтобы команда AI-агентов работала над игрой вместе.</p>
+    </section>
+
+    <h2 id="projects">Проекты</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Dinos VS Humans</h3>
+        <p>Командная битва динозавров и людей на карте с реальным рельефом.</p>
+        <div class="tags"><span class="tag">Roblox</span><span class="tag">PvP</span><span class="tag">Luau</span></div>
+      </article>
+      <article class="card">
+        <h3>Zombie Destruction Survival</h3>
+        <p>Выживание против волн зомби в полностью разрушаемом городе.</p>
+        <div class="tags"><span class="tag">Roblox</span><span class="tag">Survival</span></div>
+      </article>
+      <article class="card">
+        <h3>Ocean Destruction</h3>
+        <p>Разрушение морских сооружений и прокачка оружия.</p>
+        <div class="tags"><span class="tag">Roblox</span><span class="tag">Destruction</span></div>
+      </article>
+      <article class="card">
+        <h3>Hospital Empire</h3>
+        <p>Тайкун: строй больницу, нанимай персонал, расширяй бизнес.</p>
+        <div class="tags"><span class="tag">Roblox</span><span class="tag">Tycoon</span></div>
+      </article>
+      <article class="card">
+        <h3>Robo Fights</h3>
+        <p>Арена боёв роботов с апгрейдами деталей.</p>
+        <div class="tags"><span class="tag">Roblox</span><span class="tag">Fighting</span></div>
+      </article>
+      <article class="card">
+        <h3>Netternal Agent Center</h3>
+        <p>Центр координации AI-агентов: задачи, резервирование ресурсов и поручения через Telegram.</p>
+        <div class="tags"><span class="tag">TypeScript</span><span class="tag">MCP</span><span class="tag">Telegram</span></div>
+      </article>
+    </div>
+
+    <h2>Навыки</h2>
+    <div class="skills">
+      <span class="tag">Luau</span>
+      <span class="tag">Roblox Studio</span>
+      <span class="tag">TypeScript</span>
+      <span class="tag">Node.js</span>
+      <span class="tag">Blender</span>
+      <span class="tag">AI-агенты и MCP</span>
+    </div>
+
+    <h2 id="contact">Контакты</h2>
+    <p><a href="https://github.com/jopster1336">github.com/jopster1336</a></p>
+
+    <footer>© 2026 jopster1336</footer>
+  </div>
 </body>
 </html>
